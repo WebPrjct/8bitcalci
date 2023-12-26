@@ -1,0 +1,15 @@
+Addition: Adding two 8-bit binary numbers.
+Subtraction: Subtracting one 8-bit binary number from another.
+Multiplication: Adding 1 to an 8-bit binary number.
+Division: Subtracting 1 from an 8-bit binary number.
+
+Logical Operations:
+AND Operation: Performing a bitwise AND operation on two 8-bit binary numbers.
+OR Operation: Performing a bitwise OR operation on two 8-bit binary numbers.
+XOR Operation: Performing a bitwise XOR (Exclusive OR) operation on two 8-bit binary numbers.
+NOT Operation: Performing a bitwise NOT operation (complement) on an 8-bit binary number, inverting all its bits.
+
+Shift Operations:
+Left Shift: Shifting the bits of an 8-bit binary number to the left by a specified number of positions.
+Right Shift: Shifting the bits of an 8-bit binary number to the right by a specified number of positions.
+Arithmetic Right Shift: Shifting the bits to the right while preserving the sign bit (in signed numbers).

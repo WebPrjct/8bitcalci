@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div>
+    <div class="navbar">
+      <a href="#home" class="title">8-bit ALU</a>
+      <a href="https://www.cs.uic.edu/~i266/fall12_hw10/5653.pdf" target="_blank">About 8-bit ALU</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR ENDS -->
+
+
+  <div class="container">
+    <div class="input-section">
+      <div id="input1" class="input-field">
+        <label for="input1">input-1:</label>
+        <input type="text" id="inputfeild1" placeholder="Enter 8 bit number">
+      </div>
+      <div id="input2" class="input-field">
+        <label for="input2">input-2:</label>
+        <input type="text" id="inputfeild2" placeholder="Enter 8 bit number">
+      </div>
+      <div class="op">
+        <div>
+          <label for="operation">Select operation:</label>
+        </div>
+        <select id="operation">
+          <option value="or">OR</option>
+          <option value="and">AND</option>
+          <option value="xor">XOR</option>
+          <!-- <option value="not">NOT</option> -->
+          <option value="nand">NAND</option>
+          <option value="xnor">XNOR</option>
+          <option value="add">Add</option>
+          <option value="sub">Subtract</option>
+          <option value="mul">Multiply</option>
+        </select>
+      </div>
+
+      <div id="carryIn" class="carry-borrow" style="display: none;">
+        <label for="carryInInput">Carry In :</label>
+        <input type="text" id="inputfeild3" placeholder="Enter 1 bit number">
+      </div>
+
+      <div id="borrowIn" class="carry-borrow">
+        <label for="borrowInInput">Borrow In:</label>
+        <input type="text" id="inputfeild4" placeholder="Enter 1 bit number">
+      </div>
+    </div>
+
+    <div class="result">
+      <button id="btn" onclick="calculateResult()">Get Result</button>
+    </div>
+
+    <div class="result-section">
+      <div class="result" id="sumResult" style="display: none;">
+        <h3>Sum:</h3>
+        <p id="sumOutput">---</p>
+        <h3>Carry Out:</p>
+        </h3>
+        <p id="carryOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputSum">---</p>
+      </div>
+      <div class="result" id="subResult" style="display: none;">
+        <h3>Sub:</h3>
+        <p id="subOutput">---</p>
+        <h3>Borrow Out:</h3>
+        <p id="borrowOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputSub">---</p>
+      </div>
+      <div class="result" id="mulResult" style="display: none;">
+        <h3>Multiply:</h3>
+        <p id="mulOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputMul">---</p>
+      </div>
+      <div class="result" id="orResult" style="display: none;">
+        <h3>OR Result:</h3>
+        <p id="orOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputOr">---</p>
+      </div>
+      <div class="result" id="andResult" style="display: none;">
+        <h3>AND Result:</h3>
+        <p id="andOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputAnd">---</p>
+      </div>
+      <div class="result" id="xorResult" style="display: none;">
+        <h3>XOR Result:</h3>
+        <p id="xorOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputXor">---</p>
+      </div>
+      <div class="result" id="notResult" style="display: none;">
+        <h3>NOT Result:</h3>
+        <p id="notOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputNot">---</p>
+      </div>
+      <div class="result" id="nandResult" style="display: none;">
+        <h3>NAND Result:</h3>
+        <p id="nandOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputNand">---</p>
+      </div>
+      <div class="result" id="xnorResult" style="display: none;">
+        <h3>XNOR Result:</h3>
+        <p id="xnorOutput">---</p>
+        <h3>Decimal value:</p>
+        </h3>
+        <p id="decimalOutputXnor">---</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <Script src="Script.js"></Script>
+</body>
+
+</html>
